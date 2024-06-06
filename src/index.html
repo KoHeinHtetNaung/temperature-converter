@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+
+  <section class="w-screen h-screen flex justify-center items-center bg-gradient-to-tr from-green-300 to-green-400">
+    <div class="w-96 h-60">
+      <div class="w-full h-full bg-green-300 text-green-900 p-3 rounded-xl shadow-xl">
+        <h1 class="text-center  text-3xl font-medium tracking-wide mt-2">Temperature Converter</h1>
+        <div class="flex justify-between mt-5">
+            <span>Celsius:</span>
+            <input name="celsius" id="celsius" class="px-2 rounded-sm" type="number" onchange="computeTemp(event)">
+        </div>
+        <div class="flex justify-between mt-5">
+            <span>Fahrenheit:</span>
+            <input name="fahrenheit" id="fahrenheit" class="px-2 rounded-sm" type="number" onchange="computeTemp(event)">
+        </div>
+        <div class="flex justify-between mt-5">
+            <span>Kelvin:</span>
+            <input name="kelvin" id="kelvin" class="px-2 rounded-sm" type="number" onchange="computeTemp(event)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
